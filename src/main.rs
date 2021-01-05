@@ -1,11 +1,9 @@
-use ferris_says::say;
-use std::io::{stdout, BufWriter, BufReader};
-
 fn main() {
-    let stdout = stdout();
-    let message = String::from("I'm in danger :)");
-    let width = message.chars().count();
+    // Guessing Game
+    println!("Welcome to the guessing game!");
+    println!("We've randomly selected a number between 1 & 1000.");
+    println!("See if you can guess what it is!");
+    println!("Enter a number: ");
 
-    let mut writer = BufWriter::new(stdout.lock());
-    say(message.as_bytes(), width, &mut writer).unwrap();
+
 }
